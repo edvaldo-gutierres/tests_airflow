@@ -32,6 +32,7 @@ def _store_user():
 
 with DAG(
     dag_id="create_table_postgres_example",
+    description="Cria tabela de usuário no postgres, verificar se API de usuário fictícios está on-line, busca dados fictícios da API e grava os dados na tabela criada no postgres",
     start_date=datetime(2023, 1, 1),
     schedule_interval="@daily",
     catchup=False
