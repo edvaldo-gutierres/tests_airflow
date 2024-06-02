@@ -15,5 +15,5 @@ Os conjuntos de dados são uma ferramenta incrível para manipular e analisar da
 É importante estar ciente dessas limitações ao projetar e implementar fluxos de trabalho de dados no Airflow, para garantir que suas operações sejam executadas de maneira eficiente e confiável.
 
 
-Para ver os Dataset utilizados em pipelines, acesse a opção Dataset no WebServer do aiflow:
+Para ver os Datasets utilizados em pipelines, acesse a opção no WebServer do aiflow:
 ![alt text](../assets/image2.png)
