@@ -13,3 +13,7 @@ Os conjuntos de dados são uma ferramenta incrível para manipular e analisar da
 5. **Monitoramento Limitado**: O Airflow monitora conjuntos de dados apenas no contexto de DAGs e tarefas. Se uma ferramenta externa atualizar os dados reais representados por um conjunto de dados, o Airflow não terá como saber disso. Isso pode levar a discrepâncias entre os dados registrados no Airflow e os dados reais armazenados em um sistema externo.
 
 É importante estar ciente dessas limitações ao projetar e implementar fluxos de trabalho de dados no Airflow, para garantir que suas operações sejam executadas de maneira eficiente e confiável.
+
+
+Para ver os Dataset utilizados em pipelines, acesse a opção Dataset no WebServer do aiflow:
+![alt text](../assets/image2.png)
