@@ -76,6 +76,11 @@ Acesse a opção Admin/Conections no webserver http://127.0.0.1:8080/connection/
 
 # Testar uma DAG
 
+## Localize o container do agendador:
+```sh
+docker ps -a
+```
+
 ## Acesse a VM do agendador no docker:
 ```sh
 docker exec -it tests-airflow_b52731-scheduler-1 /bin/bash
@@ -94,3 +99,16 @@ airflow tasks test create_table_postgres_example create_table 2022-01-01
 ![alt text](assets/image.png)
 
 Obs.: 2022-01-01, data definada para testar a DAG.
+
+
+# Acessar o arquivo de configuração
+
+## Localize o container do agendador:
+```sh
+docker ps -a
+```
+
+## Copiar o arquivo airflow.cfg para o host da sua maquina local
+```sh
+docker cp tests-airflow_b52731-scheduler-1:/usr/local/airflow/airflow.cfg .
+```
